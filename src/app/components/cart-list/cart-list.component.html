@@ -1,1 +1,24 @@
-<app-cart-item *ngFor="let item of itemArray" [item]="item"> </app-cart-item>
+<div class="container mb-5 pb-3">
+  <div class="bg-light shadow-lg rounded-3 overflow-hidden">
+    <div class="row">
+      <div class="col-lg-8 pt-2 pt-lg-4 pb-4 mb-3">
+        <div
+          class="
+            justify-content-between
+            align-items-center
+            border-bottom
+            pb-3
+            text-center
+          "
+          style="font-family: sans-serif"
+        >
+          <div class="d-none d-sm-block py-1 fs-sm">Your Cart</div>
+        </div>
+        <div class="pt-2 px-4 pe-lg-0 ps-xl-5">
+          <app-cart-item *ngFor="let item of itemArray" [item]="item">
+          </app-cart-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

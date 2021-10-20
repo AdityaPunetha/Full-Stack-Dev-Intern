@@ -9,9 +9,10 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { CartListComponent } from './components/cart-list/cart-list.component';
 import { WelcomeHeaderComponent } from './components/welcome-header/welcome-header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ShoppingCartComponent, CartItemComponent, CartListComponent, WelcomeHeaderComponent],
+  declarations: [AppComponent, LoginComponent, ShoppingCartComponent, CartItemComponent, CartListComponent, WelcomeHeaderComponent, SidebarComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
