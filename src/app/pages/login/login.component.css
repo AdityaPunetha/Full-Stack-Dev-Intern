@@ -49,9 +49,9 @@ body {
 }
 
 .form-control {
-  margin: 20px 0;
-  /* border: none; */
-  /* border-color: none; */
+  margin-bottom: 20px;
+  margin-top: 7px;
+  /* margin: 20px 0; */
 }
 
 .form-control label {

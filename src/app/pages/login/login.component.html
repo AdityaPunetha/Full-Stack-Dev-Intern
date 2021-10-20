@@ -1,22 +1,24 @@
 <div class="container">
   <form class="login-form" (ngSubmit)="onSubmit()">
-    <div class="form-control">
-      <label for="text">Username</label>
+    <div>
+      <label for="text" class="control-label">Username</label>
       <input
         type="text"
         name="username"
         id="username"
         [(ngModel)]="username"
         placeholder="Enter Username"
+        class="form-control"
       />
     </div>
-    <div class="form-control">
+    <div>
       <label for="text">Password</label>
       <input
         type="text"
         name="password"
         id="password"
         [(ngModel)]="password"
+        class="form-control"
         placeholder="Enter Password"
       />
     </div>
