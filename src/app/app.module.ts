@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SwiperModule } from 'swiper/angular';
 import { LoginComponent } from './pages/login/login.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
@@ -14,8 +15,24 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductItemComponent } from './components/product-item/product-item.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ShoppingCartComponent, CartItemComponent, CartListComponent, WelcomeHeaderComponent, SidebarComponent, ProductListComponent, ProductItemComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    ShoppingCartComponent,
+    CartItemComponent,
+    CartListComponent,
+    WelcomeHeaderComponent,
+    SidebarComponent,
+    ProductListComponent,
+    ProductItemComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    NgbModule,
+    SwiperModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

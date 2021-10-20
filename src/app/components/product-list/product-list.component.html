@@ -1,4 +1,8 @@
-<app-product-item
-  *ngFor="let product of productArray"
-  [product]="product"
-></app-product-item>
+<div class="container">
+  <div class="d-flex flex-row justify-content-around">
+    <app-product-item
+      *ngFor="let product of productArray"
+      [product]="product"
+    ></app-product-item>
+  </div>
+</div>

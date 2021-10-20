@@ -19,7 +19,6 @@ export class LoginComponent implements OnInit {
       alert('Please add password!');
       return;
     }
-    console.log(this.username);
     sessionStorage.setItem('username', this.username);
     location.href = '/cart';
   }
