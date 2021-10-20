@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
 .login-form {
   margin-bottom: 40px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -49,6 +50,8 @@ body {
 
 .form-control {
   margin: 20px 0;
+  /* border: none; */
+  /* border-color: none; */
 }
 
 .form-control label {
