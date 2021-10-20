@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-cart.component.css'],
 })
 export class ShoppingCartComponent implements OnInit {
-  welcomeName: 'hello world';
+  sessionusername = sessionStorage.getItem('username');
   constructor() {}
 
   ngOnInit(): void {}

@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
       return;
     }
     console.log(this.username);
-    // sessionStorage.setItem('favoriteMovie', 'Shrek');
+    sessionStorage.setItem('username', this.username);
     location.href = '/cart';
   }
 }
