@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CartItemsArray } from 'src/app/mock-cart-items';
+import { CartService } from 'src/app/services/cart.service';
 import { SiteItem } from 'src/app/SiteItem';
 @Component({
   selector: 'app-cart-list',
@@ -7,9 +7,11 @@ import { SiteItem } from 'src/app/SiteItem';
   styleUrls: ['./cart-list.component.css'],
 })
 export class CartListComponent implements OnInit {
-  itemArray: SiteItem[] = CartItemsArray;
+  itemArray: SiteItem[] = [];
 
-  constructor() {}
+  constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.itemArray = this.cartService.getItemArray();
+  }
 }
